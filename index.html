@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head></head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./assets/css/style.css">
+<title>PacMan</title>
+</head>
+
+<body>
+
+    <div id="board">
+        <div id="menu" class="gameArea">
+            <h1>pa<span id="title">c</span>man</h1>
+            <img src="/assets/image/pac.png" id="titleImage" alt="">
+            <p id="startGame" onclick="displayGame()" class="choice">start_game</p>
+            <p class="choice">controls</p>
+            <p class="choice">about</p>
+        </div>
+        <!-- <div id="controls" class="gameArea">
+            <h2>CONTROLS :</h2>
+            <div><p>Movement : </p><img src="/assets/image/movement.png" alt=""></div>
+            <div><p>Back</p></div>
+        </div> -->
+        <!-- <div id="about" class="gameArea">
+
+        </div> -->
+
+        <canvas width="420" height="440" id="pacmanMap" class="gameArea">
+        </canvas>
+
+
+        <div id="pannel">
+            <div id="lifes">
+                <img class="life" src="/assets/image/life.png" alt="">
+                <img class="life" src="/assets/image/life.png" alt="">
+                <img class="life" src="/assets/image/life.png" alt="">
+            </div>
+            <p id="score"></p>
+            <div id="fruit"><img src="" alt=""></div>
+        </div>
+    </div>
+
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
