@@ -13,7 +13,7 @@ let appears = true
 let play = false
 
 const sprite = new Image(); 
-sprite.src = "/assets/image/spriteSheet.png"; 
+sprite.src = "./assets/image/spriteSheet.png"; 
 
 let pacman = {
     positionX: 200,
@@ -123,23 +123,23 @@ let orangeGhost = {
 
 //====Gestion du son=============================
 let soundTable = {
-    munch1: new Audio('/assets/sound/munch_1.wav'),
-    munch2: new Audio('/assets/sound/munch_2.wav'),
-    death1: new Audio('/assets/sound/death_1.wav'),
-    death2: new Audio('/assets/sound/death_2.wav'),
-    credit: new Audio('/assets/sound/credit.wav'),
-    eatFruit: new Audio('/assets/sound/eat_fruit.wav'),
-    eatGhost: new Audio('/assets/sound/eat_ghost.wav'),
-    extend: new Audio('/assets/sound/extend.wav'),
-    gameStart: new Audio('/assets/sound/game_start.wav'),
-    intermission: new Audio('/assets/sound/intermission.wav'),
-    powerPellet: new Audio('/assets/sound/power_pellet.wav'),
-    retreating: new Audio('/assets/sound/retreating.wav'),
-    siren1: new Audio('/assets/sound/siren_1.wav'),
-    siren2: new Audio('/assets/sound/siren_2.wav'),
-    siren3: new Audio('/assets/sound/siren_3.wav'),
-    siren4: new Audio('/assets/sound/siren_4.wav'),
-    siren5: new Audio('/assets/sound/siren_5.wav'),
+    munch1: new Audio('./assets/sound/munch_1.wav'),
+    munch2: new Audio('./assets/sound/munch_2.wav'),
+    death1: new Audio('./assets/sound/death_1.wav'),
+    death2: new Audio('./assets/sound/death_2.wav'),
+    credit: new Audio('./assets/sound/credit.wav'),
+    eatFruit: new Audio('./assets/sound/eat_fruit.wav'),
+    eatGhost: new Audio('./assets/sound/eat_ghost.wav'),
+    extend: new Audio('./assets/sound/extend.wav'),
+    gameStart: new Audio('./assets/sound/game_start.wav'),
+    intermission: new Audio('./assets/sound/intermission.wav'),
+    powerPellet: new Audio('./assets/sound/power_pellet.wav'),
+    retreating: new Audio('./assets/sound/retreating.wav'),
+    siren1: new Audio('./assets/sound/siren_1.wav'),
+    siren2: new Audio('./assets/sound/siren_2.wav'),
+    siren3: new Audio('./assets/sound/siren_3.wav'),
+    siren4: new Audio('./assets/sound/siren_4.wav'),
+    siren5: new Audio('./assets/sound/siren_5.wav'),
 };
 
 function soundBox(sound) {
