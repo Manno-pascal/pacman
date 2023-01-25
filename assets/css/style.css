@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'thepolice';
-    src: url('/assets/polices/pac.TTF') format('truetype');
+    src: url('./assets/polices/pac.TTF') format('truetype');
 }
 
 
@@ -29,7 +29,7 @@ body {
 
 #titleImage {
     width: 20vw;
-    /* background-image: url(/assets/image/spriteSheet.png); */
+    /* background-image: url(./assets/image/spriteSheet.png); */
 }
 #pannel{
     display: none;
