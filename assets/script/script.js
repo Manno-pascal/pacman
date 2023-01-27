@@ -720,7 +720,6 @@ function win(){
     let bonus = [""]
     
     bonusGeneration()
-    console.table(bonus);
 }
 
 
