@@ -629,13 +629,15 @@ function ghostsMoves(elem) {
         elem.positionX = 0
     }
     isLoose(elem)
+    
 }
 
 function isLoose(ghost) {
-    if (pacman.positionX == ghost.positionX && pacman.positionY == ghost.positionY && pacman.canEatGhost == false) {
+    if (ghostCollision(ghost) && pacman.canEatGhost == false) {
         soundBox("tartiflette")
         death()
-    }    if (pacman.positionX == ghost.positionX && pacman.positionY == ghost.positionY && pacman.canEatGhost == true) {
+    }
+    if (ghostCollision(ghost)  && pacman.canEatGhost == true) {
         soundBox("ratatouille")
         ghost.moveDirection = ""
         ghost.positionX = 200
@@ -647,6 +649,7 @@ function isLoose(ghost) {
 
     }
 }
+
 
 function death(){
     if (pacman.life == 0) {
@@ -712,6 +715,7 @@ function win(){
     blueGhost.positionY = 200
     pacman.positionX = 200
     pacman.positionY = 320
+    pacman.life = 2
     game.fruitIndexSkin++
 
     game.bonus = 0
@@ -990,6 +994,13 @@ function collisions(posX, posY, width, height, whatUsing) {
     }
     return false
 }
+
+function ghostCollision(elem) {
+    if (pacman.positionX + pacman.width > elem.positionX && pacman.positionX < elem.positionX + elem.width/2 && pacman.positionY + pacman.height > elem.positionY && pacman.positionY < elem.positionY + elem.height/2) {
+        return true
+    }
+}
+
 //===============================================================
 
 
